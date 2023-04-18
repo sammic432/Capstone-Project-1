@@ -1,0 +1,97 @@
+body, header{
+    margin:0;
+    padding: 0;
+    background-color: beige;
+    font-family: geneva, veranda, sans-serif; 
+}
+
+/* body{
+    background-color:black;
+    background-image: url('../images/background1.jpeg');
+    background-repeat:repeat-y;
+    background-size:cover;
+} */
+
+.navbar{
+    background-color: rgb(58, 58, 66);
+    position: fixed;
+    top: 0px;
+    width:100%;
+}
+
+.navbar a{
+    float:right;
+    padding: 15px;
+    background-color: rgba(93, 105, 98, 0.946);
+}
+
+.content{
+    background-color:rgb(23, 21, 19);
+    color:rgb(218, 213, 213);
+    opacity:0.7;
+    text-align: center;
+    position: fixed;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,0);
+    /* width: 400px; */
+}
+
+a:link, a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:rgb(138, 113, 88);
+}
+
+.login{
+    padding: 20px 30px 30px 30px;
+    background-color:rgb(23, 21, 19);
+    color:rgb(218, 213, 213);
+    opacity:1.4;
+    text-align: center;
+    position: fixed;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
