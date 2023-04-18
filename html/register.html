@@ -8,18 +8,50 @@
 
     <!-- linking external file-->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
 
 
         <div class ="navbar">
-            <a href="login.html">Log In</a>
-            <a href="checkout.html">Cart</a>
-            <a href="products.html">Shop</a>
-            <a href="index.html">Home</a>
+            <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            <a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="products.html"><img src="../images/icon.png" width="20px" height="15px" ></a>
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
 
         </div>
     </header>
+
+    
+        
+        <div class="login">
+            <form>
+            <h1 style="text-align:center">Create an Account</h1>
+            <label for="user"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="user" required>
+            <br/>
+            <label for="pass"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+            <br/>
+            <label for="pass"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+            <br/>
+
+            <div id="loginoptions">
+                <input type="checkbox" checked="checked"> Remember me
+
+
+                <button type="submit">Login</button>
+
+            
+                <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+                <span class="options"><a href="#">Forgot password</a></span>
+                <span class="options"><a href="login.html">Back to login</a></span>
+            </div>
+            </form>
+        </div>
+    
 </body>
 </html>
