@@ -1,21 +1,45 @@
 body, header{
     margin:0;
     padding: 0;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     font-family: Raleway, veranda, sans-serif; 
 }
 
+/* remove link decorations */
 a:link, a:visited{
     color:white;
     text-decoration: none;
 }
 
-/* body{
+/* background image */
+body{
     background-color:black;
-    background-image: url('../images/background1.jpeg');
-    background-repeat:repeat-y;
+    background-image: url('https://img.freepik.com/premium-vector/background-beige-gradient-vector_686681-34.jpg?w=900');
     background-size:cover;
+}
+
+/* .navbar{
+    background-color: rgb(58, 58, 66);
+    position: fixed;
+    top: 0px;
+    width:100%;
 } */
+
+/* .navbar:nth-child(2){
+    padding-top: 10px;
+} */
+
+
+/* navbar details */
+.navbar a{
+    padding: 15px;
+    color:black;
+}
+
+.navbar a:hover{
+    background-color:rgb(48, 38, 29);
+    color: white;
+}
 
 /* home page content */
 .content{
@@ -30,33 +54,10 @@ a:link, a:visited{
 }
 
 
-.navbar{
-    background-color: rgb(58, 58, 66);
-    position: fixed;
-    top: 0px;
-    width:100%;
-}
-
-.navbar a{
-    float:right;
-    padding: 15px;
-    background-color: rgba(93, 105, 98, 0.946);
-    width:20px;
-    color:black;
-}
-
-/* .navbar:nth-child(2){
-    padding-top: 10px;
-} */
-
-.navbar a:hover{
-    background-color:rgb(138, 113, 88);
-    color: white;
-}
-
+/* log in/register page details */
 .login{
     padding: 20px 30px 30px 30px;
-    background-color:rgb(23, 21, 19);
+    background-color:rgb(65, 80, 74);
     color:rgb(218, 213, 213);
     opacity:1.4;
     /* text-align: center; */
@@ -66,9 +67,6 @@ a:link, a:visited{
     left:50%;
     transform: translate(-50%,0);
 }
-
-
-/* Full-width inputs */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -92,7 +90,7 @@ button:hover {
   opacity: 0.8;
 }
 
-
+/* forgot pw & register options */
 #loginoptions{
     font-size: 12px;
     
@@ -102,3 +100,16 @@ button:hover {
     color:bisque;
 }
 
+/* products page spacing */
+.part2{
+    padding-top: 20px;
+    /* background-color: gray; */
+}
+
+.card-body{
+    background: linear-gradient(#FFF, #555);
+}
+
+.card-body .btn:focus{
+    color:black;
+}
