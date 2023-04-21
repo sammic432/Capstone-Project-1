@@ -89,7 +89,7 @@ body{
     padding: 20px 30px 30px 30px;
     background-color:rgba(23, 21, 19, .1);
     color:rgb(74, 70, 70);
-    opacity:1.4;
+    opacity:1;
     text-align: center;
 }
 
@@ -143,6 +143,12 @@ button:hover {
     /* background-color: gray; */
 }
 
+
+.card{
+    width:90%;
+    height:400px;
+}
+
 .card-body{
     background: linear-gradient(#FFF, #555);
 }
@@ -158,7 +164,7 @@ button:hover {
     padding: 20px 30px 30px 30px;
     background-color:rgba(23, 21, 19, .1);
     color:rgb(74, 70, 70);
-    opacity:1.4;
+    opacity:1;
 }
 
 .checko input[type=text]{

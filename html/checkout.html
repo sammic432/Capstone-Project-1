@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
+    <link rel="icon" href="../images/icon.png">
 
     <!-- linking external file-->
 
@@ -12,7 +13,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="../js/script.js"></script>
 </head>
 <body class = "bgclass">
     <header>
@@ -27,7 +28,7 @@
                     data-bs-target="#toggleMobileMenu"
                     aria-controls="toggleMobileMenu"
                     aria-expanded="false"
-                    aria-lable="Toggle Navigation"
+                    aria-label="Toggle Navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
                     <ul class="navbar-nav ms-auto text-center">
                         <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> <span class="sr-only">(current)</span> Home</a></li>
-                        <li><a href="products.html"><img src="../images/icon.png" width="20px" height="15px" > Shop</a></li>
+                        <li><a href="products.html"><img src="../images/icon.png" alt="logo" width="20" height="15" > Shop</a></li>
                         <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
                         <li><a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Account</a></li>
                     </ul>
@@ -44,7 +45,7 @@
         </div>
     </header>
 
-    <div class="checko container">
+    <main class="checko container">
 
         <!-- payment -->
         <div class="row">
@@ -60,7 +61,7 @@
                             <input type="text" placeholder="Last name" required>
                         </div>
                     </div>
-                    <h6">Contact Info</h6>
+                    <h6>Contact Info</h6>
                     <div class="row">
                         <div class="col-md-6">
                             <input type="text" placeholder="Phone number" required>
@@ -84,41 +85,42 @@
                     <h6>Billing Address</h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="Street address" required>
+                            <input type="text" placeholder="Street address" id="streetaddybill" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="City" required>
+                            <input type="text" placeholder="City" id="citybill" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="State" required>
+                            <input type="text" placeholder="State" id="statebill" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Zip code" required>
+                            <input type="text" placeholder="Zip code" id="zipbill" required>
                         </div>
                     </div>
 
 
                     <h6>Shipping Address</h6>
-                    <input type="checkbox"><span style="font-size:12px;"> Same as billing address</span>
+                    <input type="checkbox" id="sameaddy" onclick="copyAddy()">
+                    <label for="sameaddy"><span style="font-size:12px;"> Same as billing address</span></label>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="Street address" required>
+                            <input type="text" placeholder="Street address" id="streetaddyship" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="City" required>
+                            <input type="text" placeholder="City" id="cityship" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="State" required>
+                            <input type="text" placeholder="State" id="stateship" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Zip code" required>
+                            <input type="text" placeholder="Zip code" id="zipship" required>
                         </div>
                     </div>
-                    
+
                 </div>
                 
                 
@@ -130,37 +132,37 @@
                 <table>
                     <thead>
                         <tr>
-                            <th width="20%">Product</th>
-                            <th width="30%"></th>
-                            <th width="16%">Size</th>
-                            <th width="16%">#</th>
-                            <th width="16%">Price</th>
+                            <th style="width:20%">Product</th>
+                            <th style="width:30%"></th>
+                            <th style="width:16%">Size</th>
+                            <th style="width:16%">#</th>
+                            <th style="width:16%">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src='../images/cement.png'></td>
+                            <td><img src='../images/cement.png' alt="cement 4s"></td>
                             <td>Jordan 4 'Cement'</td>
                             <td>5Y</td>
                             <td>1</td>
                             <td>$$</td>
                         </tr>
                         <tr>
-                            <td><img src='../images/sail1.png'></td>
+                            <td><img src='../images/sail1.png' alt="sail 4s"></td>
                             <td>Off White 4 'Sail'</td>
                             <td>6.5W</td>
                             <td>1</td>
                             <td>$$</td>
                         </tr>
                         <tr>
-                            <td><img src='../images/oreo.png'></td>
+                            <td><img src='../images/oreo.png' alt="oreo 4s"></td>
                             <td>Jordan 4 'Oreo'</td>
                             <td>5Y</td>
                             <td>1</td>
                             <td>$$</td>
                         </tr>
                         <tr>
-                            <td><img src='../images/travis1.png'></td>
+                            <td><img src='../images/travis1.png' alt="travis 4s"></td>
                             <td>Travis 4</td>
                             <td>6.5W</td>
                             <td>1</td>
@@ -174,7 +176,7 @@
             </div>
         </div>
         <!-- put a button here in a new row -->
-    </div>
+    </main>
 
 
 
@@ -182,7 +184,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <footer>
-        <hr/>
+        <hr>
         <div class="container" id="indfooter">
             <div class="row">
                 <div class="col-4">
