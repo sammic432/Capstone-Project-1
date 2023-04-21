@@ -6,14 +6,14 @@ body, header{
 }
 
 /* remove link decorations */
-a:link, a:visited{
+.navbar a:link, a:visited{
     color:white;
     text-decoration: none;
 }
 
 /* background image */
 body{
-    background-color:black;
+    /* background-color:black; */
     background-image: url('https://img.freepik.com/premium-vector/background-beige-gradient-vector_686681-34.jpg?w=900');
     background-size:cover;
 }
@@ -43,16 +43,55 @@ body{
 
 /* home page content */
 .content{
-    background-color:rgb(23, 21, 19);
-    color:rgb(218, 213, 213);
-    opacity:0.7;
-    text-align: center;
-    position: fixed;
+    /* background-color:rgba(23, 21, 19, .1); */
+    color:rgb(72, 69, 69);
+    /* opacity:0.7; */
+    /* text-align: center; */
+    /* position: fixed;
     top:30%;
     left:50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%,0); */
 }
 
+#indexcontainer{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#indexcontainer .row{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#indexcontainer .col-2{
+    padding-left:30px;
+    min-width: 300px;
+}
+
+#indtext{
+    margin-top:90px;
+}
+
+#indeximage{
+    float:right;
+    padding-top:30px;
+    padding-right:20px;
+}
+
+/* for links in footer of home page */
+#indfooter a{
+    color: black;
+    text-decoration:none;
+}
+
+/* for links in footer of home page */
+#indfooter a:hover{
+    font-weight: bold;
+}
 
 /* log in/register page details */
 .login{
