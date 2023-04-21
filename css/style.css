@@ -7,7 +7,6 @@ body, header{
 
 /* background image */
 body{
-    /* background-color:black; */
     background-image: url('https://img.freepik.com/premium-vector/background-beige-gradient-vector_686681-34.jpg?w=900');
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +17,7 @@ body{
     position: fixed;
 } */
 
-/* remove link decorations */
+/* navbar link decorations */
 .navbar a:link, a:visited{
     color:white;
     text-decoration: none;
@@ -35,16 +34,9 @@ body{
     color: white;
 }
 
-/* home page content */
+/* home page font color */
 .content{
-    /* background-color:rgba(23, 21, 19, .1); */
     color:rgb(72, 69, 69);
-    /* opacity:0.7; */
-    /* text-align: center; */
-    /* position: fixed;
-    top:30%;
-    left:50%;
-    transform: translate(-50%,0); */
 }
 
 #indexcontainer{
@@ -52,6 +44,7 @@ body{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    
 }
 
 #indexcontainer .row{
@@ -82,6 +75,10 @@ body{
     text-decoration:none;
 }
 
+#indfooter li{
+    list-style-type: none;
+}
+
 /* for links in footer of home page */
 #indfooter a:hover{
     font-weight: bold;
@@ -103,7 +100,7 @@ body{
     border: 1px solid #FFF;
 }
 
-input[type=text], input[type=password] {
+.login input[type=text], input[type=password] {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -152,4 +149,50 @@ button:hover {
 
 .card-body .btn:focus{
     color:black;
+}
+
+
+
+.checko, .content{
+    margin:20px;
+    padding: 20px 30px 30px 30px;
+    background-color:rgba(23, 21, 19, .1);
+    color:rgb(74, 70, 70);
+    opacity:1.4;
+}
+
+.checko input[type=text]{
+    width:105%;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+}
+
+input::placeholder{
+    font-size:12px;
+}
+
+table{
+    margin-top:20px;
+    width:100%;
+}
+
+.checko h3{
+    padding:10px;
+}
+
+.checko h6{
+    padding-top:20px;
+}
+
+th{
+    padding-top:8px;
+    font-weight: normal;
+}
+
+tr img{
+    width:80px;
+}
+
+td{
+    font-size:14px;
 }
